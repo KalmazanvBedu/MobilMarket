@@ -6,7 +6,40 @@ menu_option_1.addEventListener("click", () => {
 
     dataLayer.push({
         event: 'menu_option_click',
-        option_menu: "1"
+        option_menu: menu_option_1.innerText
+    })
+
+});
+
+const menu_option_2 = document.getElementById("menu-option-2");
+
+menu_option_2.addEventListener("click", () => {
+
+    dataLayer.push({
+        event: 'menu_option_click',
+        option_menu: menu_option_2.innerText
+    })
+
+});
+
+const menu_option_3 = document.getElementById("menu-option-3");
+
+menu_option_3.addEventListener("click", () => {
+
+    dataLayer.push({
+        event: 'menu_option_click',
+        option_menu: menu_option_3.innerText
+    })
+
+});
+
+const menu_option_4 = document.getElementById("menu-option-4");
+
+menu_option_4.addEventListener("click", () => {
+
+    dataLayer.push({
+        event: 'menu_option_click',
+        option_menu: menu_option_4.innerText
     })
 
 });
@@ -43,9 +76,12 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
         let idBoton = boton.getAttribute("id");
         
         boton.addEventListener("click", (e) => {
+            
             if(idBoton === e.target.id) {
 
-                // alert(boton.innerText)
+                // alert(idBoton);
+
+                let textoBoton = boton.innerText;
 
                 var productName = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorNombreProducto']").querySelector("span[class*='titulo-producto']").innerText;        
                 var productCode = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedorCodigoProducto']").querySelector("span[class^='codigo-producto']").innerText;
@@ -55,7 +91,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                 var productPriceNumber = parseInt(productPrice);
                 var finalPrice = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecioFinal']").querySelector("span[class^='precio-final']").innerText;        
 
-                    if(boton.innerText === "+") {
+                    if(textoBoton === "+") {
 
                         contador = productQuantity + 1;
 
@@ -71,7 +107,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
 
                     } 
                     
-                    if (boton.innerText === "-") {
+                    if (textoBoton === "-") {
 
                         contador = productQuantity - 1;
 
@@ -113,7 +149,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
 
                     // alert(finalPrice);
 
-                if(boton.innerText == "Add") {
+                if(idBoton == "button-1") {
 
                 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 
@@ -145,7 +181,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                         
                         banner_confirmacion.setAttribute("class", "banner-confirmacion visible");
 
-                } else if (boton.innerText == "Remove") {
+                } else if (idBoton == "button-2") {
 
                     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
     
@@ -177,7 +213,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                             
                             banner_confirmacion.setAttribute("class", "banner-confirmacion visible");
     
-                    } else if (boton.innerText == "Payment") {
+                    } else if (idBoton == "button-3") {
 
                         function generacionAleatorio() {
                            var fecha = new Date();
