@@ -139,7 +139,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                             boton.setAttribute("disabled",true)
                         }
 
-                        imagenBanner.setAttribute("src", "images/Iconos/Icono producto agregado.png")
+                        imagenBanner.setAttribute("src", "imagenes/Iconos/Icono producto agregado.png")
 
                         textoBanner.innerText = "Product added to cart";
                         
@@ -171,7 +171,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                                 boton.setAttribute("disabled",true)
                             }
     
-                            imagenBanner.setAttribute("src", "images/Iconos/Icono producto removido.png")
+                            imagenBanner.setAttribute("src", "imagenes/Iconos/Icono producto removido.png")
     
                             textoBanner.innerText = "Product removed from cart";
                             
@@ -224,7 +224,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                                    boton.setAttribute("disabled",true)
                                }
        
-                               imagenBanner.setAttribute("src", "images/Iconos/Icono transacción exitosa.png")
+                               imagenBanner.setAttribute("src", "imagenes/Iconos/Icono transacción exitosa.png")
        
                                textoBanner.innerText = "Successful purchase";
                                
