@@ -89,7 +89,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                 var productPrice = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecio']").querySelector("span[class*='precio-producto']").innerText;        
                 var productCategory = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedorCategoria']").querySelector("span[class^='categoria']").innerText;        
                 var productPriceNumber = parseInt(productPrice);
-                var finalPrice = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecioFinal']").querySelector("span[class^='precio-final']").innerText;        
+                var finalPrice = parseInt(boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecioFinal']").querySelector("span[class^='precio-final']").innerText);        
 
                     if(textoBoton === "+") {
 
@@ -135,7 +135,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                     productPrice = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecio']").querySelector("span[class*='precio-producto']").innerText;        
                     productCategory = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedorCategoria']").querySelector("span[class^='categoria']").innerText;    
                     productPriceNumber = parseInt(productPrice);
-                    finalPrice = boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecioFinal']").querySelector("span[class^='precio-final']").innerText;        
+                    finalPrice = parseInt(boton.closest("div[class*='tarjeta-producto']").querySelector("div[class*='contenedor-caracteristicas']").querySelector("div[class*='contenedorPrecioFinal']").querySelector("span[class^='precio-final']").innerText);        
 
                     // alert(productName);
 
