@@ -288,7 +288,7 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                                    boton.setAttribute("disabled",true)
                                }
        
-                               imagenBanner.setAttribute("src", "imagenes/Iconos/Icono transacción exitosa.png")
+                               imagenBanner.setAttribute("src", "../imagenes/Iconos/Icono transacción exitosa.png")
        
                                textoBanner.innerText = "Successful purchase";
                                
