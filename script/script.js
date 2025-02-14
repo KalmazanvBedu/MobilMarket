@@ -6,7 +6,7 @@ menu_option_1.addEventListener("click", () => {
 
     dataLayer.push({
         event: 'menu_option_click',
-        option_menu: menu_option_1.innerText
+        menu_option: menu_option_1.innerText
     })
 
 });
@@ -17,7 +17,7 @@ menu_option_2.addEventListener("click", () => {
 
     dataLayer.push({
         event: 'menu_option_click',
-        option_menu: menu_option_2.innerText
+        menu_option: menu_option_2.innerText
     })
 
 });
@@ -28,7 +28,7 @@ menu_option_3.addEventListener("click", () => {
 
     dataLayer.push({
         event: 'menu_option_click',
-        option_menu: menu_option_3.innerText
+        menu_option: menu_option_3.innerText
     })
 
 });
@@ -39,7 +39,7 @@ menu_option_4.addEventListener("click", () => {
 
     dataLayer.push({
         event: 'menu_option_click',
-        option_menu: menu_option_4.innerText
+        menu_option: menu_option_4.innerText
     })
 
 });
@@ -214,6 +214,34 @@ const textoBanner = document.querySelector("div[class='contenedor-cuerpo-banner'
                             banner_confirmacion.setAttribute("class", "banner-confirmacion visible");
     
                     } else if (idBoton == "button-3") {
+
+                       dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+       
+                       dataLayer.push({
+                           event: "begin_checkout",
+                           ecommerce: {
+                           currency: "USD",
+                           value: finalPrice,
+                               items: [
+                                   {
+                                   item_id: productCode,
+                                   item_name: productName,
+                                   price: productPriceNumber,
+                                   quantity: productQuantity,
+                                   item_category: productCategory
+                                   }
+                                       ]
+                                   }
+                               });
+
+                               localStorage.setItem("value", finalPrice);
+                               localStorage.setItem("item_id", productCode);
+                               localStorage.setItem("item_name", productName);
+                               localStorage.setItem("price", productPriceNumber);
+                               localStorage.setItem("quantity", productQuantity);
+                               localStorage.setItem("item_category", productCategory);
+       
+                       } else if (idBoton == "button-4") {
 
                         function generacionAleatorio() {
                            var fecha = new Date();
