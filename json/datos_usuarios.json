@@ -10,5 +10,29 @@
         "user_name": "Dave",
         "user_password": "M0b1l5678#",
         "user_id": 1001
-        }
+    },
+    {
+        "user_email": "mario.cruz@mrm.com",
+        "user_name": "Mario",
+        "user_password": "M0b1l21234#",
+        "user_id": 1002
+    },
+    {
+        "user_email": "sebastian.horta@mrm.com",
+        "user_name": "Tián",
+        "user_password": "M0b1l25678#",
+        "user_id": 1003
+    },
+        {
+        "user_email": "hcardenas@webershandwick.com",
+        "user_name": "Hirám",
+        "user_password": "M0b1l31234#",
+        "user_id": 1004
+    },
+    {
+        "user_email": "marijose.serrano@mrm.com",
+        "user_name": "Majo",
+        "user_password": "M0b1l35678#",
+        "user_id": 1005
+    }
 ]
