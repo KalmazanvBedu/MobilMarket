@@ -14,7 +14,7 @@ boton_formulario_login.addEventListener("click", () => {
 
     const alerta_password = document.getElementById("alerta-password-incorrecto");
 
-    fetch("json/datos_usuarios.json", { mode: "no-cors" }) // desactivar CORS porque la ruta no contiene http(s)
+    fetch("https://kalmazanvbedu.github.io/MobilMarket/json/datos_usuarios.json", { mode: "no-cors" }) // desactivar CORS porque la ruta no contiene http(s)
     .then((res) => res.json())
     .then((data) => {
         for(let i = 0; i < data.length; i++) {
