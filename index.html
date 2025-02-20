@@ -52,6 +52,29 @@
     </div>
 </div>
 
+<div id="contenedor-formulario-inicio-sesion" class="contenedor-formulario-inicio-sesion formulario-oculto">
+    <form action="" id="formulario-inicio-sesion" class="formulario-inicio-sesion">
+        <div class="contenedor-cierre-formulario">
+            <span id="boton-cierre-formulario" class="boton-cierre-formulario">X</span>
+        </div>
+        <div class="contenedor-fila-formulario-login">
+            <span class="etiqueta-formulario-login">User</span>
+            <input type="text" id="user-input" class="input-formulario-login" placeholder="User"> 
+            <span id="alerta-usuario-incorrecto" class="alerta" hidden="hidden">Invalid user</span>
+        </div>
+        <div class="contenedor-fila-formulario-login">
+            <span class="etiqueta-formulario-login">Password</span>
+            <input type="password" id="password-input" class="input-formulario-login" placeholder="Password" pass>
+            <span id="alerta-password-incorrecto" class="alerta" hidden="hidden">Invalid password</span>
+        </div>
+        <div class="contenedor-fila-formulario-login">
+            <div id="boton-formulario-login" class="boton-formulario-login">
+                <span class="etiqueta-formulario-login">Log in</span>
+            </div>
+        </div>
+    </form>
+</div>
+
 <section class="seccion_uno">
     <div class="contenedor_menu">
         <nav class="menu">
@@ -59,11 +82,24 @@
                 <img src="imagenes/logotipo/Tienda.png" alt="" class="logo">
             </div>
             <ul class="lista_opciones">
-                <a href="/index.html"><li id="menu-option-1" class="opcion_menu">Products</li></a>
+                <a href="/index.html" class="opcion_menu"><li id="menu-option-1" class="opcion_menu">Products</li></a>
                 <li id="menu-option-2" class="opcion_menu">Offers</li>
                 <li id="menu-option-3" class="opcion_menu">Cart</li>
                 <li id="menu-option-4" class="opcion_menu">Contact</li>
             </ul>
+            <div class="contenedor-datos-usuario-uno">
+                <div class="contenedor-datos-usuario-dos">
+                    <div id="contenedor-imagen-usuario" class="contenedor-imagen-usuario">
+                        <i id="icono-usuario" class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="contenedor-nombre-usuario">
+                        <span id="nombre-usuario" class="nombre-usuario">Guest</span>
+                    </div>
+                </div>
+                <div class="contenedor-log-in">
+                    <span id="texto-login" class="texto-login">Log in</span>
+                </div>
+            </div>
         </nav>
     </div>
     <section class="seccion-uno-uno">
@@ -104,7 +140,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -144,7 +180,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -184,7 +220,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -224,7 +260,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -267,7 +303,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -307,7 +343,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -347,7 +383,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -387,7 +423,7 @@
                         <button id="less-2" class="button less">+</button>
                         <button id="button-1" class="button">Add</button>
                         <button id="button-2" class="button">Remove</button>
-                        <a class="enlace-otra-pagina" href="https://kalmazanvbedu.github.io/MobilMarket/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
+                        <a class="enlace-otra-pagina" href="/shipping-info.html"><button id="button-3" class="button button-payment">Payment</button></a>
                     </div>
                 </div>
 
@@ -407,5 +443,7 @@
 
 
 </body>
+<script src="script/login-functios.js"></script>
+<script src="https://kit.fontawesome.com/54fb3ae579.js" crossorigin="anonymous"></script>
 <script src="script/script.js"></script>
 </html>

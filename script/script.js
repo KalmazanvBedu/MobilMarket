@@ -1,3 +1,92 @@
+window.addEventListener('load', () => {
+    const login_state = localStorage.getItem("login_state");
+
+if(login_state != null) {
+    if(login_state === "active") {
+
+        const icono_usuario = document.getElementById("icono-usuario");
+
+        icono_usuario.setAttribute("class", "fa-solid fa-face-smile")
+
+        const nombre_usuario = document.getElementById("nombre-usuario");
+
+        nombre_usuario.innerText = localStorage.getItem("user_name");
+
+        const texto_login = document.getElementById("texto-login");
+
+        texto_login.innerText = "Log out"
+
+        const user_id = parseInt(localStorage.getItem("user_id"));
+
+        dataLayer.push({
+            'event': 'user_log_in',
+            'user_id': user_id
+        });
+
+    } else {
+        const icono_usuario = document.getElementById("icono-usuario");
+
+        icono_usuario.setAttribute("class", "fa-solid fa-user")
+
+        const nombre_usuario = document.getElementById("nombre-usuario");
+
+        nombre_usuario.innerText = "Guest";
+
+        const texto_login = document.getElementById("texto-login");
+
+        texto_login.innerText = "Log in"
+    }
+}
+
+})
+
+
+const texto_login = document.getElementById("texto-login");
+
+texto_login.addEventListener("click", () => {
+    
+    if(texto_login.innerText == "Log in") {
+        const contenedor_formulario_inicio_sesion = document.getElementById("contenedor-formulario-inicio-sesion");
+
+        contenedor_formulario_inicio_sesion.setAttribute("class", "contenedor-formulario-inicio-sesion formulario-visible");
+    }else {
+
+        const icono_usuario = document.getElementById("icono-usuario");
+
+        icono_usuario.setAttribute("class", "fa-solid fa-user")
+
+        const nombre_usuario = document.getElementById("nombre-usuario");
+
+        nombre_usuario.innerText = "Guest";
+
+        const texto_login = document.getElementById("texto-login");
+
+        texto_login.innerText = "Log in"
+
+        localStorage.setItem("login_state", "inactive");
+
+        localStorage.removeItem("user_id");
+
+        dataLayer.push({
+            'event': 'user_log_out',
+        });
+
+        location.reload();
+
+    }
+
+});
+
+const boton_cierre_formulario = document.getElementById("boton-cierre-formulario");
+
+boton_cierre_formulario.addEventListener("click", () => {
+
+    const contenedor_formulario_inicio_sesion = document.getElementById("contenedor-formulario-inicio-sesion");
+
+    contenedor_formulario_inicio_sesion.setAttribute("class", "contenedor-formulario-inicio-sesion formulario-oculto");
+
+});
+
 var contador;
 
 const menu_option_1 = document.getElementById("menu-option-1");

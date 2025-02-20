@@ -1,0 +1,14 @@
+[
+    {
+        "user_email": "keny.almazan@mrm.com",
+        "user_name": "Ken",
+        "user_password": "M0b1l1234#",
+        "user_id": 1000
+    },
+    {
+        "user_email": "david.lima@mrm.com",
+        "user_name": "Dave",
+        "user_password": "M0b1l5678#",
+        "user_id": 1001
+        }
+]
