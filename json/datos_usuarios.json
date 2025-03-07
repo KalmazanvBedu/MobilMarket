@@ -34,5 +34,11 @@
         "user_name": "Majo",
         "user_password": "M0b1l35678#",
         "user_id": 1005
+    },
+    {
+        "user_email": "carlos.delatorre@exxonmobil.com",
+        "user_name": "Charly",
+        "user_password": "M0b1l41234#",
+        "user_id": 1005
     }
 ]
