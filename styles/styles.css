@@ -264,7 +264,7 @@ body{
     justify-content: space-around;
     /* border: solid 2px green; */
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #006BB6;
     align-items: center;
 }
 
@@ -280,7 +280,7 @@ body{
 .texto-login{
     font-size: 12px;
     color: #ffffff;
-    text-shadow: 3px 3px 4px #000000;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .contenedor-imagen-usuario{
@@ -292,7 +292,7 @@ body{
     display: flex;
     justify-content: center;
     align-items:center;
-    box-shadow: 3px 3px 4px #000000;
+    box-shadow: 2px 2px 3px #000000;
 }
 
 .contenedor-nombre-usuario{
@@ -307,7 +307,7 @@ body{
     padding-top: 3px;
     font-size: 12px;
     color: #ffffff;
-    text-shadow: 1px 1px 2px #D9D9D9;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .fa-user, .fa-face-smile{
@@ -351,13 +351,11 @@ body{
     height: 95%;
     width: 24%;
     /* border: solid 1px #000000; */
-    border-radius: 10px;
     /* background-color: #DDE1FA; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 3px 3px 5px #888888;
 }
 
 .contenedor-caracteristicas{
